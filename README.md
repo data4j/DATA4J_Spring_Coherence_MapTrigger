@@ -8,7 +8,7 @@ There are two ways to add Map Triggers feature to application :
 
 1) Programmatic-based : The MapTriggerListener is a special purpose com.tangosol.util.MapListener implementation that is used to register a MapTrigger with a corresponding NamedCache.
 2) Configuration-based : The class-factory mechanism can be used in the coherence-cache-config.xml configuration file as the following :
-
+```html
 <distributed-scheme>
 ...
    <listener>
@@ -24,7 +24,7 @@ There are two ways to add Map Triggers feature to application :
       </class-scheme>
    </listener>
 </distributed-scheme>
-
+```
 In the following sample application, MapTrigger feature is enabled programmatically by using MapTriggerListener. A new DATA4J cluster is created and User bean is distributed by user-map NamedCache object.
 
 Used Technologies : JDK 1.7.0_40, Spring 3.2.4, Coherence 3.7.1 and Maven 3.0.4
